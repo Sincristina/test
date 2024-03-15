@@ -1,0 +1,255 @@
+:root {
+    --primary--color: #141e4c;
+    --secondary--color: #fbb44c;
+    --button--color:  #2bb686;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+
+/********************  NAVBAR   ********************/
+
+.navbar-collapse{
+    flex-grow: 0;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+
+.navbar{
+    background-color: var(--primary--color) !important;
+    color: #fff;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-link {
+    color:#fff;
+   font-size:  0.75rem;
+}
+
+.nav-link:focus, .nav-link:hover{
+    color: var(--secondary--color);
+}
+
+.nav-link.show{
+    color: #fff;
+}
+
+.logo{
+   height: 60px; 
+   padding-left: 100px;
+}
+
+.navbar-toggler{
+    padding: 0;
+    margin: 0;
+    border:0;
+    color: #fff;
+}
+
+.dropdown-item{
+    font-size:  0.75rem;
+    color:#fff;
+}
+
+.dropdown-menu{
+    background-color: var(--primary--color);
+
+}
+
+/********************  HEADER   ********************/
+.container-header{
+    background-color: var(--primary--color);
+    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.title-header{
+    font-size: 3.5rem;
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+}
+
+
+/********************  COURSE   ********************/
+.programs {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.container-courses-flex{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.container-courses{
+    width: calc(100% /3);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+.title-course{
+    text-align: center;
+font-size: 1.75rem ;
+margin: 2rem 0;
+color:  var(--primary--color);
+font-weight: 600;
+}
+
+.paragraph-course{
+    text-align: center;
+    color:#2b2922;
+    /* margin-left: 8.5rem;
+    margin-right: 8.5rem; */
+    margin-bottom: 50px;
+    line-height: 1.4;
+}
+
+.title-program{
+    color: #101d42;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.paragraph-courses{
+    color: #666;
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.microsoft-img {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.img-courses{
+    width: 100%;
+    margin-bottom: 35px;
+}
+.details-flex{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 18px;
+}
+
+.btn-program {
+    background-color: #2bb686;
+    cursor: pointer;
+    padding: 3px 30px;
+    border: 1px solid #2bb686;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.btn-program a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.icon{
+    height:15px;
+}
+
+
+
+      /********************  FOOTER   ********************/
+      .container-footer{
+        background-color: var(--primary--color);
+        padding-top: 30px;
+        padding-bottom:30px ;
+        margin-top: 50px;
+      }
+      .paragraph-footer{
+        font-size: 0.75rem;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 0;
+
+      }
+
+
+
+
+/********************  SCREEN   ********************/
+
+
+@media(max-width:600px) {
+    .navbar {
+      width:100%;
+    }
+  
+    /* .container-header{
+      padding-left: 0;
+    }
+    .container-flex {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 15px;
+    } */
+  }
+
+
+  @media(max-width:768px){
+    /* HEADER */
+    .title-header{
+        font-size: 2rem;
+    }
+
+ 
+ 
+} 
+
+
+
+
+
+
+@media(max-width:900px){
+    /* NAVBAR */
+    .logo{
+        padding-left: 0;
+    }
+
+    .navbar-collapse{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .container-courses-flex{
+        flex-wrap: wrap;
+    }
+
+    .container-courses{
+        margin-bottom: 30px;
+        width:90%;
+    }
+
+}
+
+/* @media(max-width:1200px){
+    .container-courses-flex{
+        flex-wrap: wrap;
+    }
+
+    .container-courses{
+        margin-bottom: 30px;
+        width:368px;
+    }
+} */
